@@ -1,0 +1,185 @@
+@font-face{
+    src : url("../font/Vazir-Regular.ttf");
+    font-family : "vazir";
+}
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing : border-box;
+    font-family : "vazir";
+    direction : rtl;
+}
+body{
+    background-color : rgb(78, 78, 233);
+    display : flex;
+    flex-wrap : wrap;
+    flex-direction : row;
+    justify-content : space-evenly;
+    align-items : flex-start;
+    padding-top : 30px;
+    width : 100%;
+}
+.form-information{
+    width : 36%;
+    margin-bottom : 30px;
+}
+.form-information .box-form{
+    width : 100%;
+    display : flex;
+    flex-direction : column;
+    justify-content :flex-start;
+    align-items : flex-start;
+    background-color : white;
+    border : none;
+    border-radius : 3px;
+}
+.form-information .box-form .title-box{
+    width : 100%;
+    font-size : 18px;
+    color : rgb(82, 55, 179);
+    padding : 17px 25px;
+    background-color : rgb(247, 247, 248);
+    border-radius : 3px 3px 0 0;
+}
+.form-information .box-form input , .form-information .box-form label , .form-information .box-form button ,.form-information .box-form .validate{
+    margin-right : 25px;
+}
+.form-information .box-form .title-box ,.form-information .box-form button{
+    margin-bottom : 25px;
+}
+.form-information .box-form label ,.form-information .box-form input {
+    font-size : 12px;
+}
+.form-information .box-form label{
+    margin-top : 15px;
+}
+.form-information .box-form input{
+    width : 90%;
+    outline : none;
+    border-radius : 3px;
+    border : 2px solid rgb(219, 219, 219);
+    padding : 8px;
+    margin-bottom : 10px;
+}
+.form-information .box-form .validate{
+    display : none;
+    font-size : 11px;
+    width : 90%;
+    background-color: rgb(247, 247, 248);
+    color :rgb(82, 55, 179);
+    padding : 5px;
+}
+.form-information .box-form button{
+    width : 90%;
+    font-size : 17px;
+    border : none;
+    text-align : center;
+    color : white;
+    background-color :rgb(28, 14, 224);
+    padding : 8px;
+    border-radius : 3px;
+    margin-top : 30px;
+    margin-bottom : 30px;
+    cursor : pointer;
+}
+.form-information .box-form button:hover{
+    background-color: rgb(46, 9, 179);
+}
+div.table-box{
+    width : 48%;
+    min-height : 100px;
+    background-color : white;
+    border-radius : 3px;
+    overflow : auto;
+    margin-bottom : 30px;
+}
+div.table-box table{
+    width : 97%;
+    margin-right : 10px;
+    margin-left : 10px; 
+    border-collapse : collapse;
+}
+div.table-box table thead tr th ,div.table-box table tbody tr td{
+    padding : 7px;
+    text-align : center;
+    font-size :13px;
+}
+div.table-box table thead tr th{
+    border-top : 1.5px solid rgb(230, 230, 228);
+    border-bottom : 1.5px solid rgb(230, 230, 228);
+    font-weight : bold;   
+}
+/* style for swal.fire in js*/
+.swal2-container.swal2-center>.swal2-popup{
+    font-size: 13px;
+    width : 37% !important;
+}
+.style-icon{
+    font-size : 12px;
+}
+
+@media screen and (max-width: 1070px){
+    .form-information{
+        width : 30%;
+    }
+    div.table-box{
+        width : 55%;
+    }
+    .form-information .box-form input , .form-information .box-form label , .form-information .box-form button ,.form-information .box-form .validate{
+        margin-right : 16px;
+    }
+    .form-information .box-form .title-box{
+        padding : 8px 16px;
+    }
+}
+@media screen and (max-width: 940px){
+    body{
+        display : flex;
+        flex-wrap : wrap;
+        flex-direction : column;
+        justify-content : flex-start;
+        align-items : center;
+    }
+    .form-information{
+        width : 80%;
+    }
+    .form-information .box-form input , .form-information .box-form .validate{
+        width : 92%;
+    }
+    .form-information .box-form button{
+        width : 92%;
+    }
+    div.table-box{
+        width : 80%;
+    }
+    .form-information .box-form input , .form-information .box-form label , .form-information .box-form button , .form-information .box-form .validate{
+        margin-right : 27px;
+    }
+    .form-information .box-form .title-box{
+        padding : 8px 27px;
+    }
+    @media screen and (max-width: 740px){
+        .form-information .box-form input , .form-information .box-form label , .form-information .box-form button , .form-information .box-form .validate{
+            margin-right : 20px;
+        }
+        .form-information .box-form .title-box{
+            padding : 8px 20px;
+        }
+    }
+    @media screen and (max-width: 550px){
+        .form-information .box-form input , .form-information .box-form label , .form-information .box-form button ,.form-information .box-form .validate{
+            margin-right : 15px;
+        }
+        .form-information .box-form .title-box{
+            padding : 8px 15px;
+        }
+    }
+    @media screen and (max-width: 450px){
+        .form-information .box-form input , .form-information .box-form label , .form-information .box-form button , .form-information .box-form .validate{
+            margin-right : 10px;
+        }
+        .form-information .box-form .title-box{
+            padding : 8px 10px;
+        }
+    }
+} 

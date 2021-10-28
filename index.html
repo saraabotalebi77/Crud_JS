@@ -1,0 +1,60 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dom js</title>
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <form class="form-information" id="form-information">
+            <fieldset class="box-form">
+                <div class="title-box" id="title">ایجاد حساب کاربری</div>
+                
+                <label for="firstName">نام *</label>
+                <input type="text" name="firstName" id="firstName">
+                <small class="validate" id="valid-firstName"></small>
+
+                <label for="lastName">نام خانوادگی *</label>
+                <input type="text" name="lastName" id="lastName">
+                <small class="validate" id="valid-lastName"></small>
+
+                <label for="email">ایمیل *</label>
+                <input type="text" name="email" id="email">
+                <small class="validate" id="valid-email"></small>
+
+                <label for="phoneNumber">شماره تلفن *</label>
+                <input type="text" name="phoneNumber" id="phoneNumber" placeholder="9122349080(98+|0)" >
+                <small class="validate" id="valid-phoneNumber"></small>
+
+                <button type="submit" name="btn-submit" id="btn">عضویت</button>
+            </fieldset>
+        </form>
+        <div class="table-box">
+            <div class="box-trashIcon" >
+                <i id="icon-trash"class="fa fa-trash-o" title ="پاک کردن تمام اطلاعات"style="cursor:pointer ;font-size:30px ; margin : 10px 10px 0 0"></i>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>حذف</th>
+                        <th>ویرایش</th>
+                        <th>نام</th>
+                        <th>نام خانوادگی</th>
+                        <th>ایمیل</th>
+                        <th>شماره تلفن</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+
+        </div>
+    </body>
+    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/main.js"></script>
+
+</html>
